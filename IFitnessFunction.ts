@@ -1,0 +1,3 @@
+interface IFitnessFunction {
+  (): void;
+}

@@ -1,0 +1,573 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ICre",
+				" ◇ ICreatureBuilder ICreatureBuilder"
+			],
+			[
+				"IC",
+				" ◇ ICreatureBuilder ICreatureBuilder"
+			],
+			[
+				"ite",
+				"[pub]  iterations number"
+			],
+			[
+				"mutation",
+				"[pub]  mutationProbability number"
+			],
+			[
+				"section",
+				"sectionMaterial"
+			],
+			[
+				"sect",
+				"sectionMaterial"
+			],
+			[
+				"Number",
+				"NumberValue"
+			],
+			[
+				"lesser",
+				"lesserMomentOfForce"
+			],
+			[
+				"greater",
+				"greaterMomentOfForce"
+			],
+			[
+				"topFlangeH",
+				"topFlangeHeight"
+			],
+			[
+				"topFlange",
+				"topFlangeWidth"
+			],
+			[
+				"In",
+				"InternalForce"
+			],
+			[
+				"bottom",
+				"bottomFlangeHeight"
+			],
+			[
+				"eps",
+				"epsilon"
+			],
+			[
+				"scri",
+				"scriptsString"
+			],
+			[
+				"eva",
+				"evaluated"
+			],
+			[
+				"chapter",
+				"chapterNumber"
+			],
+			[
+				"Ewan",
+				"Ewangielija"
+			],
+			[
+				"Ewa",
+				"Ewangielija"
+			],
+			[
+				"Ewange",
+				"Ewangelia"
+			],
+			[
+				"Ze",
+				"Zech"
+			],
+			[
+				"Mojż",
+				"Mojżeszowa"
+			],
+			[
+				"max",
+				"maxVerseNum"
+			],
+			[
+				"option",
+				"optionValue"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.ts",
+			"settings":
+			{
+				"buffer_size": 159,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Settings.ts",
+			"settings":
+			{
+				"buffer_size": 1824,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 272.0,
+		"selected_items":
+		[
+			[
+				"build",
+				"Build: Cancel"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"reformat",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"view.run_command(\"example\")",
+			"view.run_command(\"example\");",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreatureBuilder.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Settings.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IFitnessFunction.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreature.ts",
+		"/home/sel/.config/sublime-text-3/Packages/User/ts/bigsection.sublime-snippet",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IMutationOperator.ts",
+		"/home/sel/.config/sublime-text-3/Packages/User/ts/section.sublime-snippet",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICrossoverOperator.ts",
+		"/home/sel/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/node.d.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build.sh",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build.txt",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/genetic-algorithm.sublime-workspace",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/index.ts",
+		"/home/sel/.config/sublime-text-3/Packages/User/Typescript.sublime-settings",
+		"/home/sel/.config/sublime-text-3/Packages/T3S/Typescript.sublime-build",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/test.ts",
+		"/home/sel/.config/sublime-text-3/Packages/T3S/Typescript.sublime-settings",
+		"/home/sel/.config/sublime-text-3/Packages/T3S/README.md",
+		"/home/sel/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/index.js",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/index.js.map",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/package.json",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/capacity.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/grossParameters.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/localInstability.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/localInstabilityForState.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/instabilitAndShearLag.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters.js",
+		"/home/sel/.config/sublime-text-3/Packages/Prefixr.py",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/Sheet.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/IBeamSection.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/cmlt.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/index.js",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/index.js",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/BoundaryConditions.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/InternalForce.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/binding.gyp",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dim-cpp/Sheet.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dim-cpp/main.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dim-cpp/calculations/grossParameters.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dim-cpp/calculations/critical.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dim-cpp/BoundaryConditions.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dim-cpp/v8utils.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/critical/main.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/common/Sheet.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/common/InternalForce.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/critical/critical.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/main.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/critical/binding.gyp",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/instabilityAndShearLag.js",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/IBeamSection.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/Sheet.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/grossParameters.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/v8utils.cc",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/binding.gyp",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/grossParameters/libv8-convert/include/cvv8/convert.hpp",
+		"/home/sel/Pobrane/libv8-convert/include/cvv8/v8-convert.hpp",
+		"/home/sel/Pobrane/libv8-convert/include/cvv8/convert.hpp",
+		"/home/sel/Pobrane/libv8-convert/include/cvv8/detail/convert_core.hpp",
+		"/home/sel/Dokumenty/gaad/Przetarg/6_Fortran/najnowszy - genet EC3 + stat + Pcr/glowny.f",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/gaad_webgl",
+		"/home/sel/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/sel/Dokumenty/potential/examples/base/index.html",
+		"/home/sel/Dokumenty/gaad/opro/client/app.js",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/conv.js",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/var/data2.json",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/import2.js",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/var/data.json",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/import.js",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/app.js",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/var/books.json",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/kjv_zefania.xml",
+		"/home/sel/.config/sublime-text-3/Packages/User/js/con.sublime-snippet",
+		"/home/sel/Dokumenty/bible-map/bm2/services/bible-book/package.json",
+		"/home/sel/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/sel/.config/sublime-text-3/Packages/User/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mutationProbability",
+			"settings\":",
+			"compi",
+			"translation-input",
+			"language-input",
+			"verse",
+			"Verse",
+			"verse",
+			"translation",
+			"Translation",
+			"translation",
+			"language",
+			"Language",
+			"language",
+			"Debug",
+			"phip2s(",
+			"acesn",
+			"lambday",
+			"lambday(",
+			"var",
+			"s.",
+			"type",
+			"cmlt",
+			"advance",
+			"advace",
+			"=",
+			"supportingRibsSusceptible",
+			"advancedMethod",
+			"sigmaS",
+			";",
+			"lx",
+			"normalForce",
+			"webHeight",
+			"webWidth",
+			"bottomFlangeHeight",
+			"bottomFlangeWidth",
+			"Width",
+			"top",
+			"topFlangeWidth",
+			";",
+			"String::NewSymbol",
+			";",
+			"double",
+			"!==",
+			"!== ",
+			"===",
+			"posisonsRatio",
+			"youngsModule",
+			"ly",
+			"double",
+			"gaad::",
+			"n",
+			"var",
+			"PI",
+			"pi",
+			"PI",
+			"pi",
+			"PI",
+			"pi",
+			"PI",
+			"pi",
+			"PI",
+			"max",
+			"min",
+			"Math.",
+			"new NotInNormError",
+			"normalForce",
+			"};",
+			"function",
+			"Sheet sheet",
+			"incalid",
+			"!==",
+			"===",
+			"var",
+			"bottomFlangeBorderRadius",
+			"topFlangeBorderRadius",
+			"bottomFlangeHeight",
+			"Math.",
+			"topFlangeHeight",
+			"sheet.",
+			"Loacl",
+			"GAAD_CONV_CC",
+			"sheet.rhog",
+			"sheet.epsilon",
+			"sheet.rhod",
+			"sheet.epsilon",
+			");",
+			"length",
+			"auto_inde",
+			"auto",
+			"reindent",
+			"symbol",
+			"goto_symbol",
+			"\"Ty\"",
+			"\"Ti\"",
+			"Ko\"",
+			"\"Ez\"",
+			"fold",
+			"num",
+			"$option.val()",
+			"urlIndex",
+			"url",
+			"response",
+			"error"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/T3S/Typescript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Settings.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1824,
+								1824
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/T3S/Typescript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1080.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"filesread",
+				"lib/FilesReader.js"
+			],
+			[
+				"app",
+				"services/bible-book/app.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

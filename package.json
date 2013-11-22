@@ -1,0 +1,17 @@
+{
+  "name": "genetic-algorithm",
+  "version": "0.0.0",
+  "description": "Gentic Algorithm implementation, customisable",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jasmine-node spec/"
+  },
+  "keywords": [
+    "genetic",
+    "algorithm",
+    "genetic",
+    "evolve"
+  ],
+  "author": "Szymon Wygnański <s@finalclass.net> (http://finalclass.net/)",
+  "license": "MIT"
+}
