@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"cre",
+				"[priv] ● creatureBuilder ICreatureBuilder"
+			],
+			[
+				"pop",
+				"[priv] ● populationSize number"
+			],
+			[
+				"crossoverProbabi",
+				"[pub] ● corssoverProbability number"
+			],
+			[
+				"muta",
+				"[pub] ● mutationProbability number"
+			],
+			[
 				"ICre",
 				" ◇ ICreatureBuilder ICreatureBuilder"
 			],
@@ -104,18 +120,43 @@
 	"buffers":
 	[
 		{
-			"file": "index.ts",
+			"file": "GeneticAlgorithm.ts",
 			"settings":
 			{
-				"buffer_size": 159,
+				"buffer_size": 528,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Settings.ts",
+			"file": "Population.ts",
 			"settings":
 			{
-				"buffer_size": 1824,
+				"buffer_size": 423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Evolver.ts",
+			"settings":
+			{
+				"buffer_size": 426,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TournamentPreselection.ts",
+			"settings":
+			{
+				"buffer_size": 170,
+				"line_ending": "Unix",
+				"name": "TournamentPreselection"
+			}
+		},
+		{
+			"file": "interfaces.d.ts",
+			"settings":
+			{
+				"buffer_size": 646,
 				"line_ending": "Unix"
 			}
 		}
@@ -123,9 +164,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 272.0,
+		"height": 192.0,
 		"selected_items":
 		[
+			[
+				"typescri",
+				"Typescript: Reload Project"
+			],
 			[
 				"build",
 				"Build: Cancel"
@@ -190,17 +235,24 @@
 	},
 	"file_history":
 	[
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreatureBuilder.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/GeneticAlgorithm.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Evolver.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/examples/find-point/index.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Settings.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/interfaces.d.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/PopulationBuilder.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Population.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build.sh",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IMutationOperator.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/package.json",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreatureBuilder.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IFitnessFunction.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreature.ts",
 		"/home/sel/.config/sublime-text-3/Packages/User/ts/bigsection.sublime-snippet",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IMutationOperator.ts",
 		"/home/sel/.config/sublime-text-3/Packages/User/ts/section.sublime-snippet",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICrossoverOperator.ts",
 		"/home/sel/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/node.d.ts",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build.sh",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build.txt",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/genetic-algorithm.sublime-workspace",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/index.ts",
@@ -212,7 +264,6 @@
 		"/home/sel/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/index.js",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/index.js.map",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/package.json",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/capacity.cc",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/grossParameters.cc",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/lib/gaad/dimensioning/dimcpp/calculations/localInstability.cc",
@@ -284,6 +335,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":",
 			"mutationProbability",
 			"settings\":",
 			"compi",
@@ -413,24 +465,58 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.ts",
+					"file": "GeneticAlgorithm.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 159,
+						"buffer_size": 528,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								78,
-								78
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/T3S/Typescript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Population.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								398
 							]
 						],
 						"settings":
@@ -449,20 +535,85 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "Settings.ts",
+					"buffer": 2,
+					"file": "Evolver.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1824,
+						"buffer_size": 426,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1824,
-								1824
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/T3S/Typescript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "TournamentPreselection.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "TournamentPreselection",
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/T3S/Typescript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "interfaces.d.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								362
 							]
 						],
 						"settings":
@@ -477,7 +628,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

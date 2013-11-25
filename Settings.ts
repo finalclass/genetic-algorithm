@@ -1,17 +1,21 @@
-/// <reference path="IFitnessFunction" />
-/// <reference path="ICreature.ts" />
-/// <reference path="IMutationOperator.ts" />
-/// <reference path="ICrossoverOperator.ts" />
-/// <reference path="ICreatureBuilder.ts" />
+/// <reference path="interfaces.d.ts" />
 
-class Settings {
+class Settings implements ISettings {
   public mutationOperator:IMutationOperator;
   public crossoverOperator:ICrossoverOperator;
   public creatureBuilder:ICreatureBuilder;
   public fitnessFunction:IFitnessFunction;
 
-  constructor() {
-
+  constructor(options?:ISettings) {
+    if (options) {
+      this.mutationOperator = options.mutationOperator;
+      this.crossoverOperator = options.crossoverOperator;
+      this.creatureBuilder = options.creatureBuilder;
+      this.fitnessFunction = options.fitnessFunction;
+      this.iterations = options.iterations;
+      this.mutationProbability = options.mutationProbability;
+      this.crossoverProbability = options.crossoverProbability;
+    }
   }
 
   // -----------------------------------------------------
@@ -61,20 +65,38 @@ class Settings {
   // corssoverProbability
   // ---------------------------
 
-  private _corssoverProbability:number;
+  private _crossoverProbability:number;
 
-  public get corssoverProbability() : number {
-    return this._corssoverProbability;
+  public get crossoverProbability() : number {
+    return this._crossoverProbability;
   }
 
-  public set corssoverProbability(probability:number) {
+  public set crossoverProbability(probability:number) {
     if (probability > 1) {
       probability = 1;
     } else if (probability < 0) {
       probability = 0;
     }
-    this._corssoverProbability = probability;
+    this._crossoverProbability = probability;
   }
+
+  // ---------------------------
+  // populationSize
+  // ---------------------------
+
+  private _populationSize:number;
+
+  public get populationSize() : number {
+    return this._populationSize;
+  }
+
+  public set populationSize(populationSize:number) {
+    if (populationSize < 1) {
+      populationSize = 1;
+    }
+    this._populationSize = populationSize;
+  }
+  
 
 }
 
