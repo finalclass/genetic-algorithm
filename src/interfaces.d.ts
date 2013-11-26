@@ -1,5 +1,12 @@
 interface ICreature {
-  
+  clone() : ICreature;
+  score:number;
+}
+
+interface IRandomizer {
+  random() : number;
+  randomInt(max:number) : number;
+  randomBetween(from:number, to:number, step:number) : number;
 }
 
 interface ICreatureBuilder {
@@ -23,7 +30,14 @@ interface IEvolver {
 }
 
 interface IPreselection {
-  
+  preselect(population:IPopulation) : IPopulation;
+}
+
+interface IPopulation {
+  populate() : void;
+  preselect() : IPopulation;
+  size:number;
+  creatures:ICreature[];
 }
 
 interface ISettings {

@@ -5,7 +5,11 @@
 		[
 			[
 				"cre",
-				"[priv] ● creatureBuilder ICreatureBuilder"
+				"[pub] ● creatureBuilder ICreatureBuilder"
+			],
+			[
+				"presele",
+				"[pub] ○ preselect (): IPopulation"
 			],
 			[
 				"pop",
@@ -120,43 +124,44 @@
 	"buffers":
 	[
 		{
-			"file": "GeneticAlgorithm.ts",
+			"file": "src/Population.ts",
 			"settings":
 			{
-				"buffer_size": 528,
+				"buffer_size": 470,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Population.ts",
+			"file": "src/Evolver.ts",
 			"settings":
 			{
-				"buffer_size": 423,
+				"buffer_size": 719,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Evolver.ts",
+			"file": "src/operators/CrossoverPopulation.ts",
 			"settings":
 			{
-				"buffer_size": 426,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "TournamentPreselection.ts",
-			"settings":
-			{
-				"buffer_size": 170,
+				"buffer_size": 216,
 				"line_ending": "Unix",
-				"name": "TournamentPreselection"
+				"name": "/// <reference path=\"../node.d.ts\" />"
 			}
 		},
 		{
-			"file": "interfaces.d.ts",
+			"file": "src/Randomizer.ts",
 			"settings":
 			{
-				"buffer_size": 646,
+				"buffer_size": 588,
+				"line_ending": "Unix",
+				"name": "/// <reference path=\"node.d.ts\" />"
+			}
+		},
+		{
+			"file": "src/interfaces.d.ts",
+			"settings":
+			{
+				"buffer_size": 992,
 				"line_ending": "Unix"
 			}
 		}
@@ -164,9 +169,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 192.0,
+		"height": 92.0,
 		"selected_items":
 		[
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"typescri",
 				"Typescript: Reload Project"
@@ -178,14 +195,6 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"reindent",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"reinde",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"indent",
@@ -235,14 +244,18 @@
 	},
 	"file_history":
 	[
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/GeneticAlgorithm.ts",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Evolver.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/operators/TournamentPreselection.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build/examples/find-point/index.js",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/examples/find-point/index.ts",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Settings.ts",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/interfaces.d.ts",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/PopulationBuilder.ts",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Population.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build.sh",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/interfaces.d.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/GeneticAlgorithm.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Population.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Evolver.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/TournamentPreselection.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/LICENSE",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Settings.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/PopulationBuilder.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IMutationOperator.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/package.json",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreatureBuilder.ts",
@@ -335,6 +348,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ft",
 			":",
 			"mutationProbability",
 			"settings\":",
@@ -447,6 +461,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"6",
 			""
 		],
 		"reverse": false,
@@ -465,24 +480,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "GeneticAlgorithm.ts",
+					"file": "src/Population.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 528,
+						"buffer_size": 470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								219,
-								219
+								74,
+								74
 							]
 						],
 						"settings":
@@ -504,19 +519,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Population.ts",
+					"file": "src/Evolver.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 423,
+						"buffer_size": 719,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								398,
-								398
+								399,
+								399
 							]
 						],
 						"settings":
@@ -536,24 +551,25 @@
 				},
 				{
 					"buffer": 2,
-					"file": "Evolver.ts",
+					"file": "src/operators/CrossoverPopulation.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 426,
+						"buffer_size": 216,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								394,
-								394
+								178,
+								178
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
+							"auto_name": "/// <reference path=\"../node.d.ts\" />",
 							"extensions":
 							[
 								"ts"
@@ -568,25 +584,25 @@
 				},
 				{
 					"buffer": 3,
-					"file": "TournamentPreselection.ts",
+					"file": "src/Randomizer.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 170,
+						"buffer_size": 588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								135,
-								135
+								559,
+								559
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"auto_name": "TournamentPreselection",
+							"auto_name": "/// <reference path=\"node.d.ts\" />",
 							"extensions":
 							[
 								"ts"
@@ -601,19 +617,19 @@
 				},
 				{
 					"buffer": 4,
-					"file": "interfaces.d.ts",
+					"file": "src/interfaces.d.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 646,
+						"buffer_size": 992,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								362,
-								362
+								668,
+								668
 							]
 						],
 						"settings":
@@ -628,7 +644,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

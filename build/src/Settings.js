@@ -59,6 +59,21 @@ var Settings = (function () {
         configurable: true
     });
 
+
+    Object.defineProperty(Settings.prototype, "populationSize", {
+        get: function () {
+            return this._populationSize;
+        },
+        set: function (populationSize) {
+            if (populationSize < 1) {
+                populationSize = 1;
+            }
+            this._populationSize = populationSize;
+        },
+        enumerable: true,
+        configurable: true
+    });
+
     return Settings;
 })();
 

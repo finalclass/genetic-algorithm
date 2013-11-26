@@ -1,8 +1,8 @@
-/// <reference path="../../node.d.ts"/>
-/// <reference path="../../interfaces.d.ts"/>
+/// <reference path="../../src/node.d.ts"/>
+/// <reference path="../../src/interfaces.d.ts"/>
 
 
-import GeneticAlgorithm = require('../../GeneticAlgorithm');
+import GeneticAlgorithm = require('../../src/GeneticAlgorithm');
 
 var ga = new GeneticAlgorithm({
   mutationOperator: {
