@@ -9,7 +9,7 @@ var randNum = () => Math.random() * 100;
 
 class Creature implements ICreature {
   public score:number;
-  public numbers:number[]
+  public numbers:number[];
 
   constructor() {
     this.score = 0;
