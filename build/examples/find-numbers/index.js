@@ -2,31 +2,41 @@
 /// <reference path="../../src/interfaces.d.ts"/>
 var GeneticAlgorithm = require('../../src/GeneticAlgorithm');
 
-var Point = (function () {
-    function Point() {
+var NUMBER_OF_NUMBERS = 100;
+
+var randNum = function () {
+    return Math.random() * 100;
+};
+
+var Creature = (function () {
+    function Creature() {
         this.score = 0;
-        this.x = 0;
-        this.y = 0;
+
+        this.numbers = new Array(NUMBER_OF_NUMBERS);
+
+        for (var i = 0; i < NUMBER_OF_NUMBERS; i += 1) {
+            this.numbers[i];
+        }
     }
-    Point.prototype.clone = function () {
-        var point = new Point();
-        point.x = this.x;
-        point.y = this.y;
+    Creature.prototype.clone = function () {
+        var point = new Creature();
+        point.numbers = this.numbers.slice(0);
         return point;
     };
 
-    Point.prototype.randomize = function () {
-        this.x = Math.random() * 100;
-        this.y = Math.random() * 100;
+    Creature.prototype.randomize = function () {
+        for (var i = 0; i < NUMBER_OF_NUMBERS; i += 1) {
+            this.numbers[i] = randNum();
+        }
     };
-    return Point;
+    return Creature;
 })();
 
 var CreatureBuilder = (function () {
     function CreatureBuilder() {
     }
     CreatureBuilder.prototype.execute = function () {
-        return new Point();
+        return new Creature();
     };
     return CreatureBuilder;
 })();
@@ -36,12 +46,9 @@ var MutationOperator = (function () {
     }
     MutationOperator.prototype.execute = function (creature) {
         var rand = Math.random();
+        var gene = Math.floor(Math.random() * NUMBER_OF_NUMBERS);
 
-        if (rand > 0.5) {
-            (creature).x = Math.random() * 100;
-        } else {
-            (creature).y = Math.random() * 100;
-        }
+        (creature).numbers[gene] = randNum();
 
         return creature;
     };
@@ -57,13 +64,14 @@ var CrossoverOperator = (function () {
             creature2: b.clone()
         };
         var rand = Math.random();
+        var crossPoint = Math.floor(Math.random() * NUMBER_OF_NUMBERS);
 
-        if (rand > 0.5) {
-            (pair.creature1).x = (b).x;
-            (pair.creature2).x = (a).x;
-        } else {
-            (pair.creature1).y = (b).y;
-            (pair.creature2).y = (a).y;
+        for (var i = 0; i < NUMBER_OF_NUMBERS; i += 1) {
+            if (i < crossPoint) {
+                (pair.creature1).numbers[i] = (b).numbers[i];
+            } else {
+                (pair.creature2).numbers[i] = (a).numbers[i];
+            }
         }
 
         return pair;
@@ -71,17 +79,22 @@ var CrossoverOperator = (function () {
     return CrossoverOperator;
 })();
 
-var perfectSolution = new Point();
-perfectSolution.x = 50;
-perfectSolution.y = 50;
+var perfectSolution = new Creature();
+for (var i = 0; i < NUMBER_OF_NUMBERS; i += 1) {
+    perfectSolution.numbers[i] = 50;
+}
 
 var FitnessFunction = (function () {
     function FitnessFunction() {
     }
     FitnessFunction.prototype.execute = function (creature) {
-        var distance = Math.sqrt(Math.pow(perfectSolution.x - (creature).x, 2) + Math.pow(perfectSolution.y - (creature).y, 2));
+        var sumOfPowers = 0;
 
-        return 1 / distance;
+        for (var i = 0; i < NUMBER_OF_NUMBERS; i += 1) {
+            sumOfPowers += Math.pow(perfectSolution.numbers[i] - (creature).numbers[i], 2);
+        }
+
+        return 1 / Math.sqrt(sumOfPowers);
     };
     return FitnessFunction;
 })();
@@ -92,9 +105,9 @@ var ga = new GeneticAlgorithm({
     fitnessFunction: new FitnessFunction(),
     creatureBuilder: new CreatureBuilder(),
     crossoverProbability: 0.6,
-    mutationProbability: 0.1,
-    populationSize: 750,
-    iterations: 2000
+    mutationProbability: 0.3,
+    populationSize: 200,
+    iterations: 300
 });
 
 var time = process.hrtime();

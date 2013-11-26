@@ -2,7 +2,7 @@
   "name": "genetic-algorithm",
   "version": "0.0.0",
   "description": "Gentic Algorithm implementation, customisable",
-  "main": "build/index.js",
+  "main": "build/src/GeneticAlgorithm.js",
   "scripts": {
     "test": "jasmine-node spec/"
   },

@@ -1,7 +1,7 @@
-/// <reference path="../node.d.ts" />
-/// <reference path="../interfaces.d.ts" />
-var Randomizer = require('../Randomizer');
-var Population = require('../Population');
+/// <reference path="node.d.ts" />
+/// <reference path="interfaces.d.ts" />
+var Randomizer = require('./Randomizer');
+var Population = require('./Population');
 
 var TournamentPreselection = (function () {
     function TournamentPreselection(creatureBuilder, ntour, randomizer) {
@@ -12,15 +12,15 @@ var TournamentPreselection = (function () {
         this.randomizer = randomizer;
     }
     TournamentPreselection.prototype.preselect = function (population) {
-        var nextGeneration = new Population(this.creatureBuilder, population.size);
+        var nextGeneration = new Population();
 
-        for (var p = 0; p < population.size; p += 1) {
+        for (var p = 0; p < population.creatures.length; p += 1) {
             var fitness = [];
             var tours = [];
 
             for (var t = 0; t < this.ntour; t += 1) {
                 var random1 = this.randomizer.random();
-                var s = Math.floor(random1 * population.size);
+                var s = Math.floor(random1 * population.creatures.length);
                 tours.push(s);
                 fitness[t] = population.creatures[s].score;
             }

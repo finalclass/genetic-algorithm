@@ -1,21 +1,20 @@
 /// <reference path="node.d.ts" />
 /// <reference path="interfaces.d.ts"/>
-var TournamentPreselection = require('./operators/TournamentPreselection');
-
 var Population = (function () {
-    function Population(creatureBuilder, populationSize) {
-        this.creatureBuilder = creatureBuilder;
-        this.preselection = new TournamentPreselection(this.creatureBuilder);
-        this.size = populationSize;
+    function Population() {
+        this.creatures = [];
     }
-    Population.prototype.populate = function () {
-        for (var i = 0; i < this.size; i += 1) {
-            this.creatures.push(this.creatureBuilder.execute());
-        }
-    };
+    Population.prototype.findBest = function () {
+        var best = this.creatures[0];
 
-    Population.prototype.preselect = function () {
-        return this.preselection.preselect(this);
+        for (var p = 0; p < this.creatures.length; p += 1) {
+            var solution = this.creatures[p];
+            if (solution && solution.score > best.score) {
+                best = solution;
+            }
+        }
+
+        return best;
     };
     return Population;
 })();

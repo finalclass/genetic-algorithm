@@ -7,17 +7,21 @@ class Population implements IPopulation {
   
   public creatures:ICreature[];
 
-  constructor(
-    public creatureBuilder:ICreatureBuilder,
-    populationSize:number) {
-
-    this.size = populationSize;
+  constructor() {
+    this.creatures = [];
   }
 
-  public populate() : void {
-    for (var i = 0; i < this.size; i += 1) {
-      this.creatures.push(this.creatureBuilder.execute());
+  public findBest() : ICreature {
+    var best = this.creatures[0];
+
+    for (var p = 0; p < this.creatures.length; p += 1) {
+      var solution:ICreature = this.creatures[p];
+      if (solution && solution.score > best.score) {
+        best = solution;
+      }
     }
+
+    return best;
   }
 }
 

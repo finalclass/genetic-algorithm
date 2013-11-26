@@ -9,6 +9,7 @@ var Settings = (function () {
             this.iterations = options.iterations;
             this.mutationProbability = options.mutationProbability;
             this.crossoverProbability = options.crossoverProbability;
+            this.populationSize = options.populationSize;
         }
     }
     Object.defineProperty(Settings.prototype, "iterations", {

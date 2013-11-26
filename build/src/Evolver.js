@@ -1,18 +1,51 @@
 /// <reference path="node.d.ts" />
 /// <reference path="interfaces.d.ts" />
 var Population = require('./Population');
+var TournamentPreselection = require('./TournamentPreselection');
+var PopulationCrossover = require('./PopulationCrossover');
+var PopulationMutation = require('./PopulationMutation');
 
 var Evolver = (function () {
     function Evolver(settings) {
         this.settings = settings;
+        this.preselection = new TournamentPreselection(settings.creatureBuilder);
+        this.populationCrossover = new PopulationCrossover(settings.crossoverOperator, settings.crossoverProbability);
+        this.populationMutation = new PopulationMutation(settings.mutationOperator, settings.mutationProbability);
     }
     Evolver.prototype.evolve = function () {
-        var population = new Population(this.settings.creatureBuilder, this.settings.populationSize);
+        var population = new Population();
 
-        population.populate();
+        this.populate(population);
 
-        for (var i = 0; i < this.settings.iterations; i += 1) {
-            population = population.preselect();
+        for (var i = this.settings.iterations; i--;) {
+            this.calculateFitness(population);
+            population = this.preselection.preselect(population);
+            population = this.populationCrossover.crossover(population);
+            population = this.populationMutation.mutate(population);
+        }
+
+        return population.findBest();
+    };
+
+    Evolver.prototype.populate = function (population) {
+        var builder = this.settings.creatureBuilder;
+        var creatures = population.creatures;
+
+        for (var i = this.settings.populationSize; i--;) {
+            var creature = builder.execute();
+            creature.randomize();
+            creatures.push(creature);
+        }
+    };
+
+    Evolver.prototype.calculateFitness = function (population) {
+        var creatures = population.creatures;
+        var len = creatures.length;
+        var fitness = this.settings.fitnessFunction;
+
+        for (var i = 0; i < len; i += 1) {
+            var creature = creatures[i];
+            creature.score = fitness.execute(creature);
         }
     };
     return Evolver;

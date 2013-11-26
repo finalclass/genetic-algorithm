@@ -1,6 +1,12 @@
 interface ICreature {
   clone() : ICreature;
+  randomize() : void;
   score:number;
+}
+
+interface ICreaturePair {
+  creature1:ICreature;
+  creature2:ICreature;
 }
 
 interface IRandomizer {
@@ -13,20 +19,20 @@ interface ICreatureBuilder {
   execute() : ICreature;
 }
 
-interface ICrossoverOperator {
-  execute(a:any, b:any) : ICreature;
-}
-
 interface IFitnessFunction {
-  execute(creature:any) : number;
+  execute(creature:ICreature) : number;
 }
 
 interface IMutationOperator {
-  execute(creature:ICreature) : void;
+  execute(creature:ICreature) : ICreature;
+}
+
+interface ICrossoverOperator {
+  execute(a:ICreature, b:ICreature) : ICreaturePair;
 }
 
 interface IEvolver {
-  evolve() : any
+  evolve() : ICreature;
 }
 
 interface IPreselection {
@@ -34,9 +40,7 @@ interface IPreselection {
 }
 
 interface IPopulation {
-  populate() : void;
-  preselect() : IPopulation;
-  size:number;
+  findBest() : ICreature;
   creatures:ICreature[];
 }
 

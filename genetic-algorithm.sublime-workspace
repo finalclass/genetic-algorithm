@@ -4,8 +4,40 @@
 		"selected_items":
 		[
 			[
+				"popula",
+				"[pub] ● populationSize number"
+			],
+			[
+				"cross",
+				"[pub] ● crossoverOperator ICrossoverOperator"
+			],
+			[
+				"mutation",
+				"[pub] ● mutationOperator IMutationOperator"
+			],
+			[
+				"perf",
+				"  perfectSolution Point"
+			],
+			[
 				"cre",
-				"[pub] ● creatureBuilder ICreatureBuilder"
+				"[pub] ● creature2 ICreature"
+			],
+			[
+				"pio",
+				"[priv] ● populationMutation PopulationMutation"
+			],
+			[
+				"Popula",
+				"  PopulationMutation PopulationMutation"
+			],
+			[
+				"mu",
+				"[priv] ● mutationOperator IMutationOperator"
+			],
+			[
+				"cros",
+				"[pub] ● crossoverOperator ICrossoverOperator"
 			],
 			[
 				"presele",
@@ -34,10 +66,6 @@
 			[
 				"ite",
 				"[pub]  iterations number"
-			],
-			[
-				"mutation",
-				"[pub]  mutationProbability number"
 			],
 			[
 				"section",
@@ -124,10 +152,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/Population.ts",
+			"file": "examples/find-point/index.ts",
 			"settings":
 			{
-				"buffer_size": 470,
+				"buffer_size": 2269,
 				"line_ending": "Unix"
 			}
 		},
@@ -135,33 +163,15 @@
 			"file": "src/Evolver.ts",
 			"settings":
 			{
-				"buffer_size": 719,
+				"buffer_size": 2001,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/operators/CrossoverPopulation.ts",
+			"file": "examples/find-numbers/index.ts",
 			"settings":
 			{
-				"buffer_size": 216,
-				"line_ending": "Unix",
-				"name": "/// <reference path=\"../node.d.ts\" />"
-			}
-		},
-		{
-			"file": "src/Randomizer.ts",
-			"settings":
-			{
-				"buffer_size": 588,
-				"line_ending": "Unix",
-				"name": "/// <reference path=\"node.d.ts\" />"
-			}
-		},
-		{
-			"file": "src/interfaces.d.ts",
-			"settings":
-			{
-				"buffer_size": 992,
+				"buffer_size": 2403,
 				"line_ending": "Unix"
 			}
 		}
@@ -244,9 +254,22 @@
 	},
 	"file_history":
 	[
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/Evolver.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/PopulationMutation.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/Population.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/interfaces.d.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/TournamentPreselection.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/PopulationCrossover.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/Settings.ts",
+		"/home/sel/Dokumenty/gaad/Przetarg/6_Fortran/najnowszy - genet EC3 + stat + Pcr/glowny.f",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/GeneticAlgorithm.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/examples/find-point/index.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/package.json",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/CrossoverPopulation.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/Randomizer.ts",
+		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/operators/CrossoverPopulation.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/src/operators/TournamentPreselection.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build/examples/find-point/index.js",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/examples/find-point/index.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/build.sh",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/interfaces.d.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/GeneticAlgorithm.ts",
@@ -257,7 +280,6 @@
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/Settings.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/PopulationBuilder.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IMutationOperator.ts",
-		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/package.json",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreatureBuilder.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/IFitnessFunction.ts",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/node_modules/genetic-algorithm/ICreature.ts",
@@ -314,7 +336,6 @@
 		"/home/sel/Pobrane/libv8-convert/include/cvv8/v8-convert.hpp",
 		"/home/sel/Pobrane/libv8-convert/include/cvv8/convert.hpp",
 		"/home/sel/Pobrane/libv8-convert/include/cvv8/detail/convert_core.hpp",
-		"/home/sel/Dokumenty/gaad/Przetarg/6_Fortran/najnowszy - genet EC3 + stat + Pcr/glowny.f",
 		"/home/sel/Dokumenty/gaad/gaad_webgl/gaad_webgl",
 		"/home/sel/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/sel/Dokumenty/potential/examples/base/index.html",
@@ -345,9 +366,25 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"Point",
+			"1000",
+			"population",
+			"[];\n",
+			"IFitness",
+			"child2",
+			"child1",
+			"x",
+			".x",
+			"mutacj",
+			"crossoverPopulation",
+			"CrossoverPopulation",
+			"crossoverPopulation",
+			"CrossoverPopulation",
+			"crossover",
+			"krzyzowa",
 			"ft",
 			":",
 			"mutationProbability",
@@ -485,19 +522,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/Population.ts",
+					"file": "examples/find-point/index.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 470,
+						"buffer_size": 2269,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								74,
-								74
+								163,
+								163
 							]
 						],
 						"settings":
@@ -523,113 +560,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 719,
+						"buffer_size": 2001,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								399,
-								399
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"extensions":
-							[
-								"ts"
-							],
-							"syntax": "Packages/T3S/Typescript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/operators/CrossoverPopulation.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 216,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								178,
-								178
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"auto_name": "/// <reference path=\"../node.d.ts\" />",
-							"extensions":
-							[
-								"ts"
-							],
-							"syntax": "Packages/T3S/Typescript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/Randomizer.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 588,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								559,
-								559
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"auto_name": "/// <reference path=\"node.d.ts\" />",
-							"extensions":
-							[
-								"ts"
-							],
-							"syntax": "Packages/T3S/Typescript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/interfaces.d.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 992,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								668,
-								668
+								1919,
+								1919
 							]
 						],
 						"settings":
@@ -644,7 +583,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "examples/find-numbers/index.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/T3S/Typescript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
