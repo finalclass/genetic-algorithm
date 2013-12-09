@@ -26,6 +26,22 @@ class Settings implements ISettings {
   // -----------------------------------------------------
 
   // ---------------------------
+  // ntour
+  // ---------------------------
+  private _ntour:number;
+
+  public get ntour() : number {
+    return this._ntour;
+  }
+
+  public set ntour(val:number) {
+    if (val < 2) {
+      val = 2;
+    }
+    this._ntour = val;
+  }
+
+  // ---------------------------
   // iterations
   // ---------------------------
   

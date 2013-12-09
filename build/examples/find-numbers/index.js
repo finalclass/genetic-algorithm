@@ -107,7 +107,8 @@ var ga = new GeneticAlgorithm({
     crossoverProbability: 0.6,
     mutationProbability: 0.3,
     populationSize: 200,
-    iterations: 300
+    iterations: 300,
+    ntour: 2
 });
 
 var time = process.hrtime();

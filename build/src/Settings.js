@@ -12,6 +12,21 @@ var Settings = (function () {
             this.populationSize = options.populationSize;
         }
     }
+    Object.defineProperty(Settings.prototype, "ntour", {
+        get: function () {
+            return this._ntour;
+        },
+        set: function (val) {
+            if (val < 2) {
+                val = 2;
+            }
+            this._ntour = val;
+        },
+        enumerable: true,
+        configurable: true
+    });
+
+
     Object.defineProperty(Settings.prototype, "iterations", {
         get: function () {
             return this._iterations;

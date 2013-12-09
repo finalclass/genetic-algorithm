@@ -13,7 +13,7 @@ class Evolver implements IEvolver {
   private populationMutation:PopulationMutation;
 
   constructor(private settings:ISettings) {
-    this.preselection = new TournamentPreselection(settings.creatureBuilder);
+    this.preselection = new TournamentPreselection(settings.creatureBuilder, settings.ntour);
     this.populationCrossover = new PopulationCrossover(
       settings.crossoverOperator,
       settings.crossoverProbability);

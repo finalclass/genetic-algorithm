@@ -8,7 +8,7 @@ var PopulationMutation = require('./PopulationMutation');
 var Evolver = (function () {
     function Evolver(settings) {
         this.settings = settings;
-        this.preselection = new TournamentPreselection(settings.creatureBuilder);
+        this.preselection = new TournamentPreselection(settings.creatureBuilder, settings.ntour);
         this.populationCrossover = new PopulationCrossover(settings.crossoverOperator, settings.crossoverProbability);
         this.populationMutation = new PopulationMutation(settings.mutationOperator, settings.mutationProbability);
     }

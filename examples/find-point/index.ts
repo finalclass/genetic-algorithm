@@ -93,7 +93,8 @@ var ga = new GeneticAlgorithm({
   crossoverProbability: 0.6,
   mutationProbability: 0.1,
   populationSize: 750,
-  iterations: 2000
+  iterations: 2000,
+  ntour: 2
 });
 
 

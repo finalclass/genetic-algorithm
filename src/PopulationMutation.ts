@@ -21,9 +21,10 @@ class PopulationMutation {
       var mutated:ICreature;
 
       if (rand < this.mutationProbability) {
-        nextGeneration.creatures.push(this.mutationOperator.execute(creature));
+        var cr = this.mutationOperator.execute(creature);
+        nextGeneration.creatures.push(cr);
       } else {
-         nextGeneration.creatures.push(creature.clone());
+        nextGeneration.creatures.push(creature.clone());
       }
     }
 

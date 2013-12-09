@@ -10,7 +10,6 @@ class PopulationCrossover {
     private crossoverOperator:ICrossoverOperator, 
     private crossoverProbability:number,
     private randomizer:IRandomizer = new Randomizer()) {
-
   }
 
   crossover(population:IPopulation) {
@@ -18,8 +17,8 @@ class PopulationCrossover {
     var children:ICreaturePair;
 
     for (var p = 0; p < population.creatures.length - 1; p += 2) {
-      var parent1:ICreature = population.creatures[p];
-      var parent2:ICreature = population.creatures[p + 1];
+      var parent1:any = population.creatures[p];
+      var parent2:any = population.creatures[p + 1];
       var rand = this.randomizer.random();
 
       if (this.crossoverProbability < rand) {

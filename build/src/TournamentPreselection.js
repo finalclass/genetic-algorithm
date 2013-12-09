@@ -5,7 +5,7 @@ var Population = require('./Population');
 
 var TournamentPreselection = (function () {
     function TournamentPreselection(creatureBuilder, ntour, randomizer) {
-        if (typeof ntour === "undefined") { ntour = 10; }
+        if (typeof ntour === "undefined") { ntour = 2; }
         if (typeof randomizer === "undefined") { randomizer = new Randomizer(); }
         this.creatureBuilder = creatureBuilder;
         this.ntour = ntour;
