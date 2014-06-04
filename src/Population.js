@@ -20,3 +20,4 @@ var Population = (function () {
 })();
 
 module.exports = Population;
+//# sourceMappingURL=Population.js.map

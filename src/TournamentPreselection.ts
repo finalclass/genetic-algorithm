@@ -1,5 +1,5 @@
-/// <reference path="node.d.ts" />
-/// <reference path="interfaces.d.ts" />
+/// <reference path="typings/node/node.d.ts" />
+/// <reference path="typings/genetic-algorithm/interfaces.d.ts" />
 
 import Randomizer = require('./Randomizer');
 import Population = require('./Population');

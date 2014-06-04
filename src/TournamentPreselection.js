@@ -52,3 +52,4 @@ var TournamentPreselection = (function () {
 })();
 
 module.exports = TournamentPreselection;
+//# sourceMappingURL=TournamentPreselection.js.map

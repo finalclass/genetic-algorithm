@@ -1,5 +1,5 @@
-/// <reference path="../../src/node.d.ts"/>
-/// <reference path="../../src/interfaces.d.ts"/>
+/// <reference path="../../src/typings/node/node.d.ts"/>
+/// <reference path="../../src/typings/genetic-algorithm/interfaces.d.ts"/>
 var GeneticAlgorithm = require('../../src/GeneticAlgorithm');
 
 var NUMBER_OF_NUMBERS = 100;
@@ -48,7 +48,7 @@ var MutationOperator = (function () {
         var rand = Math.random();
         var gene = Math.floor(Math.random() * NUMBER_OF_NUMBERS);
 
-        (creature).numbers[gene] = randNum();
+        creature.numbers[gene] = randNum();
 
         return creature;
     };
@@ -68,9 +68,9 @@ var CrossoverOperator = (function () {
 
         for (var i = 0; i < NUMBER_OF_NUMBERS; i += 1) {
             if (i < crossPoint) {
-                (pair.creature1).numbers[i] = (b).numbers[i];
+                pair.creature1.numbers[i] = b.numbers[i];
             } else {
-                (pair.creature2).numbers[i] = (a).numbers[i];
+                pair.creature2.numbers[i] = a.numbers[i];
             }
         }
 
@@ -91,7 +91,7 @@ var FitnessFunction = (function () {
         var sumOfPowers = 0;
 
         for (var i = 0; i < NUMBER_OF_NUMBERS; i += 1) {
-            sumOfPowers += Math.pow(perfectSolution.numbers[i] - (creature).numbers[i], 2);
+            sumOfPowers += Math.pow(perfectSolution.numbers[i] - creature.numbers[i], 2);
         }
 
         return 1 / Math.sqrt(sumOfPowers);
@@ -116,4 +116,3 @@ var solution = ga.run();
 console.log('TIME', process.hrtime(time)[1] * 1e-6);
 
 console.log(solution);
-

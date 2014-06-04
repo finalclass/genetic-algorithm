@@ -1,5 +1,5 @@
-/// <reference path="../../src/node.d.ts"/>
-/// <reference path="../../src/interfaces.d.ts"/>
+/// <reference path="../../src/typings/node/node.d.ts"/>
+/// <reference path="../../src/typings/genetic-algorithm/interfaces.d.ts"/>
 
 
 import GeneticAlgorithm = require('../../src/GeneticAlgorithm');

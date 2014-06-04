@@ -19,3 +19,4 @@ var GeneticAlgorithm = (function () {
 })();
 
 module.exports = GeneticAlgorithm;
+//# sourceMappingURL=GeneticAlgorithm.js.map

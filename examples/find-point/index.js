@@ -103,3 +103,4 @@ var solution = ga.run();
 console.log('TIME', process.hrtime(time)[1] * 1e-6);
 
 console.log(solution);
+//# sourceMappingURL=index.js.map

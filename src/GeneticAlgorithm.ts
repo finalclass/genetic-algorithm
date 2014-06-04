@@ -1,8 +1,8 @@
-/// <reference path="node.d.ts" />
-/// <reference path="interfaces.d.ts" />
+/// <reference path="typings/node/node.d.ts" />
+/// <reference path="typings/genetic-algorithm/interfaces.d.ts" />
 
-import Settings = require('Settings');
-import Evolver = require('Evolver');
+import Settings = require('./Settings');
+import Evolver = require('./Evolver');
 
 class GeneticAlgorithm {
 

@@ -52,3 +52,4 @@ var Evolver = (function () {
 })();
 
 module.exports = Evolver;
+//# sourceMappingURL=Evolver.js.map

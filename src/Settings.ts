@@ -1,4 +1,4 @@
-/// <reference path="interfaces.d.ts" />
+/// <reference path="typings/genetic-algorithm/interfaces.d.ts" />
 
 class Settings implements ISettings {
   public mutationOperator:IMutationOperator;

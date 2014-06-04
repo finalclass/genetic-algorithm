@@ -94,3 +94,4 @@ var Settings = (function () {
 })();
 
 module.exports = Settings;
+//# sourceMappingURL=Settings.js.map

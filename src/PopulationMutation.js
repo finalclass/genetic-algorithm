@@ -32,3 +32,4 @@ var PopulationMutation = (function () {
 })();
 
 module.exports = PopulationMutation;
+//# sourceMappingURL=PopulationMutation.js.map
