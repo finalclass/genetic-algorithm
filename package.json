@@ -12,6 +12,10 @@
     "genetic",
     "evolve"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:finalclass/genetic-algorithm.git"
+  },
   "author": "Szymon Wygnański <s@finalclass.net> (http://finalclass.net/)",
   "license": "MIT"
 }
