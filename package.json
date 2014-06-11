@@ -1,6 +1,6 @@
 {
   "name": "genetic-algorithm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Gentic Algorithm TypeScript implementation, customisable",
   "main": "build/src",
   "scripts": {
