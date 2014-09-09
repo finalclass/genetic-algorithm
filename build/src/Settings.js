@@ -10,6 +10,9 @@ var Settings = (function () {
             this.mutationProbability = options.mutationProbability;
             this.crossoverProbability = options.crossoverProbability;
             this.populationSize = options.populationSize;
+            var noop = function () {
+            };
+            this.onIteration = options.onIteration || noop;
         }
     }
     Object.defineProperty(Settings.prototype, "ntour", {

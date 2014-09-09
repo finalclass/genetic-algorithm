@@ -5,6 +5,7 @@ class Settings implements ISettings {
   public crossoverOperator:ICrossoverOperator;
   public creatureBuilder:ICreatureBuilder;
   public fitnessFunction:IFitnessFunction;
+  public onIteration:(i?:number)=>void;
 
   constructor(options?:ISettings) {
     if (options) {
@@ -16,6 +17,8 @@ class Settings implements ISettings {
       this.mutationProbability = options.mutationProbability;
       this.crossoverProbability = options.crossoverProbability;
       this.populationSize = options.populationSize;
+      var noop:()=>void = () => {};
+      this.onIteration = options.onIteration || noop;
     }
   }
 

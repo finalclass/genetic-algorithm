@@ -52,8 +52,8 @@ declare module "genetic-algorithm" {
   }
 
   export interface IPopulation {
-    findBest() : ICreature;
-    creatures: ICreature[];
+    creatures:ICreature[];
+    findBest():ICreature;
   }
 
   export interface ISettings {
@@ -81,9 +81,9 @@ declare module "genetic-algorithm" {
 
   class Population implements IPopulation {
     public size: number;
-    public creatures: ICreature[];
     constructor();
     public findBest(): ICreature;
+    public creatures: ICreature[];
   }
 
   class PopulationCrossover {

@@ -32,6 +32,7 @@ class Evolver implements IEvolver {
       population = this.preselection.preselect(population);
       population = this.populationCrossover.crossover(population);
       population = this.populationMutation.mutate(population);
+      this.settings.onIteration(i);
     }
 
     return population.findBest();

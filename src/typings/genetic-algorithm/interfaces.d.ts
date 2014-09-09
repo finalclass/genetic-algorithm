@@ -54,4 +54,5 @@ interface ISettings {
   mutationProbability:number;
   crossoverProbability:number;
   ntour:number;
+  onIteration?:(i?:number)=>void;
 }
