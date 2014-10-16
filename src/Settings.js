@@ -28,8 +28,6 @@ var Settings = (function () {
         enumerable: true,
         configurable: true
     });
-
-
     Object.defineProperty(Settings.prototype, "iterations", {
         get: function () {
             return this._iterations;
@@ -43,8 +41,6 @@ var Settings = (function () {
         enumerable: true,
         configurable: true
     });
-
-
     Object.defineProperty(Settings.prototype, "mutationProbability", {
         get: function () {
             return this._mutationProbability;
@@ -52,7 +48,8 @@ var Settings = (function () {
         set: function (probability) {
             if (probability > 1) {
                 probability = 1;
-            } else if (probability < 0) {
+            }
+            else if (probability < 0) {
                 probability = 0;
             }
             this._mutationProbability = probability;
@@ -60,8 +57,6 @@ var Settings = (function () {
         enumerable: true,
         configurable: true
     });
-
-
     Object.defineProperty(Settings.prototype, "crossoverProbability", {
         get: function () {
             return this._crossoverProbability;
@@ -69,7 +64,8 @@ var Settings = (function () {
         set: function (probability) {
             if (probability > 1) {
                 probability = 1;
-            } else if (probability < 0) {
+            }
+            else if (probability < 0) {
                 probability = 0;
             }
             this._crossoverProbability = probability;
@@ -77,8 +73,6 @@ var Settings = (function () {
         enumerable: true,
         configurable: true
     });
-
-
     Object.defineProperty(Settings.prototype, "populationSize", {
         get: function () {
             return this._populationSize;
@@ -92,9 +86,7 @@ var Settings = (function () {
         enumerable: true,
         configurable: true
     });
-
     return Settings;
 })();
-
 module.exports = Settings;
 //# sourceMappingURL=Settings.js.map
